@@ -19,7 +19,7 @@ export default function SignupPage() {
         const res = await axios.post(`${DOMAIN}/api/users/`, newUser);
         if (res?.data.success) {
             setMessage(res?.data.message);
-            navigate("/login");
+            navigate("/dealstorm2/login");
         }
         else {
             setMessage(res?.data.message);
