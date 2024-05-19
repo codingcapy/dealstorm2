@@ -14,7 +14,7 @@ export default function HomePage() {
             <h2 className="text-center text-2xl tracking-tighter">
                 Finding inexpensive options with ease
             </h2>
-            <NavLink to="/login" className="flex flex-col mx-auto text-center py-10 my-5 text-white bg-teal-600 w-[200px] text-2xl rounded-3xl">Login</NavLink>
+            <NavLink to="/login" className="flex flex-col mx-auto text-center py-2 my-5 text-white bg-teal-600 w-[200px] text-2xl rounded-3xl">Login</NavLink>
             <div className="text-center">New user? <NavLink to="/signup" className="text-teal-600 font-bold">Sign up</NavLink></div>
         </main>
     )

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header nav ul li:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 0px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
+    transition: all ease-in-out 0.5s;
+}
+
+#main-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+#main-nav.visible {
+    max-height: 500px;
+    /* Adjust the height according to your content */
+    transition: max-height 0.5s ease-in;
+}
