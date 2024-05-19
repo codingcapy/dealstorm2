@@ -1,5 +1,5 @@
 
 
-const DOMAIN = "http://localhost:3333";
+const DOMAIN = "https://dealstom2-server-production.up.railway.app";
 
 export default DOMAIN;
