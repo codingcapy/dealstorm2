@@ -7,7 +7,7 @@ import ScrollReveal from 'scrollreveal'
 import axios from "axios"
 import DOMAIN from "../services/endpoint";
 
-export default function AllSetPage() {
+export default function CompletedPage() {
 
     const navigate = useNavigate();
     const { loginService, authLoading, user } = useAuthStore((state) => state);
@@ -70,7 +70,7 @@ export default function AllSetPage() {
             <h2 className="timeline-content js--fadeInLeft text-center text-2xl tracking-tighter">
                 Finding inexpensive options with ease
             </h2>
-            <h1 className="timeline-content js--fadeInRight text-center text-4xl">You're all set! &#128526;</h1>
+            <h1 className="timeline-content js--fadeInRight text-center text-4xl">Grocery List Completed! &#128526;</h1>
         </main>
     )
 }
