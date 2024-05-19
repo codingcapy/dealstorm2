@@ -1,6 +1,7 @@
 
 
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import axios from "axios";
 import DOMAIN from "../services/endpoint";
 import useAuthStore from "../store/AuthStore";
@@ -39,6 +40,8 @@ export default function SearchPage() {
                 0/<span className="text-teal-600">${budget}</span>
             </div>
             <input type="text" placeholder="Search for an ingredient!" className="flex flex-col bg-white mx-auto py-1 my-7 px-4 rounded-xl outline-none w-[90%] text-xl text-center text-gray-600" />
+            <NavLink to="/dealstorm2/mylist"
+                className="flex flex-col mx-auto  w-[300px] text-center px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white text-2xl">Go to My List</NavLink>
         </main>
     )
 }
