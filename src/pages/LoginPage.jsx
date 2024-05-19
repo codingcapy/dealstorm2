@@ -51,11 +51,6 @@ export default function LoginPage() {
                             <input type="password" name='password' id='password' placeholder='Password' required rows="10"
                                 cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px]" />
                         </div>
-                        <div className="flex flex-col my-2">
-                            <label htmlFor="confirmpassword">Confirm Password</label>
-                            <input type="password" name='confirmpassword' id='confirmpassword' placeholder='Confirm Password' required
-                                rows="10" cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px]" />
-                        </div>
                         <p className="text-center text-xl">{message}</p>
                         <button
                             className="px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white">Login</button>
