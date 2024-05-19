@@ -52,7 +52,7 @@ export default function Header() {
                     </li>}
                     {user && <li
                         className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
-                        <NavLink to="/dealstorm2/dashboard" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Profile</NavLink>
+                        <NavLink to="/dealstorm2/profile" onClick={() => window.innerWidth < 700 && setNavVisible(false)}>Profile</NavLink>
                     </li>}
                     {user && <li
                         className="px-5 py-2 text-center md:hidden rounded-md transition ease-in-out duration-300  md:text-2xl">
@@ -69,7 +69,7 @@ export default function Header() {
                 </ul>
             </nav>
             <div className="flex">
-                {user && <NavLink to="/dealstorm2/dashboard"
+                {user && <NavLink to="/dealstorm2/profile"
                     className="nav-element hidden px-5 py-2 md:py-5 text-center md:block rounded-md transition ease-in-out duration-300 md:text-2xl">
                     Profile
                 </NavLink>}

@@ -12,6 +12,7 @@ import AllSetPage from "./pages/AllSetPage"
 import SearchPage from "./pages/SearchPage"
 import MyListPage from "./pages/MyListPage"
 import CompletedPage from "./pages/CompletedPage"
+import ProfilePage from "./pages/ProfilePage"
 
 export function Router() {
     const router = createBrowserRouter(
@@ -28,6 +29,7 @@ export function Router() {
                 <Route path="/dealstorm2/search" element={<SearchPage />} />
                 <Route path="/dealstorm2/mylist" element={<MyListPage />} />
                 <Route path="/dealstorm2/completed" element={<CompletedPage />} />
+                <Route path="/dealstorm2/profile" element={<ProfilePage />} />
             </Route>
         )
     )
