@@ -127,6 +127,7 @@ export default function SearchPage() {
         </button>
 
       </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10422.821007833185!2d-122.999909!3d49.2251167!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486765bdb5d5b3f%3A0x68dafb58b8f7deb!2sT%26T%20Supermarket!5e0!3m2!1sen!2sca!4v1716144725917!5m2!1sen!2sca" width="300" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="mx-auto"></iframe>
     </main>
   );
 }
