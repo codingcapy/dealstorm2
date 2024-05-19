@@ -36,7 +36,7 @@ export default function BudgetPage() {
                 <form onSubmit={handleSubmit} className="flex flex-col">
                     <label
                         htmlFor="budget"
-                        className="timeline-content js--fadeInRight text-lg font-bold py-2 text-center mx-auto"
+                        className="text-lg font-bold py-2 text-center mx-auto"
                     >What is your weekly budget?</label>
                     <div className="px-2 rounded-2xl bg-white w-[300px] mx-auto">
                         <div className=" ">$

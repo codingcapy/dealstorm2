@@ -52,6 +52,7 @@ export default function SignupPage() {
                             <input type="password" name='confirmpassword' id='confirmpassword' placeholder='Confirm Password' required
                                 rows="10" cols="40" className="px-2 border rounded-lg border-slate-700 py-1 w-[300px]" />
                         </div>
+                        <p className="text-center text-xl">{message}</p>
                         <button
                             className="px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white">Signup</button>
                         <p className="text-lg text-center">Already have an account? <NavLink to="/dealstorm2/login"
