@@ -127,11 +127,6 @@ export default function SearchPage() {
         </button>
 
       </div>
-      <NavLink to="/dealstorm2/mylist"
-        className="flex flex-col mx-auto w-[300px] text-center px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white text-2xl">View My List</NavLink>
-
-
-
     </main>
   );
 }
