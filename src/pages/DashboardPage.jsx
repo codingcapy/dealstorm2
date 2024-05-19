@@ -94,7 +94,7 @@ export default function DashboardPage() {
                         Restaurants nearby
                     </h3>
                     <ul className="py-4">
-                        <li className="py-4 border-t flex" key={item}>
+                        <li className="py-4 border-t flex">
                             <img
                                 src={freshii}
                                 alt=""
@@ -102,7 +102,7 @@ export default function DashboardPage() {
                             />{" "}
                             <div className="pl-2 ">Freshii</div>
                         </li>
-                        <li className="py-4 border-t flex" key={item}>
+                        <li className="py-4 border-t flex">
                             <img
                                 src={chipotle}
                                 alt=""
@@ -110,7 +110,7 @@ export default function DashboardPage() {
                             />{" "}
                             <div className="pl-2 ">Chipotle</div>
                         </li>
-                        <li className="py-4 border-t flex" key={item}>
+                        <li className="py-4 border-t flex">
                             <img
                                 src={subway}
                                 alt=""
