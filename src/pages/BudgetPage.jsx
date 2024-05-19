@@ -21,7 +21,7 @@ export default function BudgetPage() {
         const res = await axios.post(`${DOMAIN}/api/budgets/`, newBudget);
         if (res?.data.success) {
             setMessage(res?.data.message);
-            navigate("/address");
+            navigate("/dealstorm2/address");
         }
         else {
             setMessage(res?.data.message);

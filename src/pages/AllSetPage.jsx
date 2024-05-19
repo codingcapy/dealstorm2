@@ -13,7 +13,7 @@ export default function AllSetPage(){
 
     useEffect(() => {
         setTimeout(()=>{
-            navigate("/dashboard")
+            navigate("/dealstorm2/dashboard")
         }, 1000)
     })
 

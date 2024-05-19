@@ -13,7 +13,7 @@ export default function LoginPage() {
 
     useEffect(() => {
         if (!!user) {
-            navigate(`/loading`);
+            navigate(`/dealstorm2/loading`);
         }
     }, [user])
 
@@ -59,7 +59,7 @@ export default function LoginPage() {
                         <p className="text-center text-xl">{message}</p>
                         <button
                             className="px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white">Login</button>
-                        <p className="text-lg text-center">New User? <NavLink to="/signup"
+                        <p className="text-lg text-center">New User? <NavLink to="/dealstorm2/signup"
                             className="text-teal-300 font-bold">Sign Up</NavLink></p>
                         <p className="text-lg text-center">Forgot Password? <a href="#"
                             className="text-teal-300 font-bold">Recovery</a></p>

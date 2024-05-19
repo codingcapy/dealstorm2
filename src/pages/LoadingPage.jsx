@@ -17,10 +17,10 @@ export default function LoadingPage(){
             const res = await axios.get(`${DOMAIN}/api/budgets/${user.user_id}`)
             console.log(res)
             if (!res.data.value){
-                navigate("/budget")
+                navigate("/dealstorm2/budget")
             }
             else{
-                navigate("/dashboard")
+                navigate("/dealstorm2/dashboard")
             }
         }
         verifyBudget()

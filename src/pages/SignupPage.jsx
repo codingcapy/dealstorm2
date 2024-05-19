@@ -54,7 +54,7 @@ export default function SignupPage() {
                         </div>
                         <button
                             className="px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white">Signup</button>
-                        <p className="text-lg text-center">Already have an account? <NavLink to="/login"
+                        <p className="text-lg text-center">Already have an account? <NavLink to="/dealstorm2/login"
                             className="text-teal-300 font-bold">Login</NavLink></p>
                         <p className="text-lg text-center">Forgot Password? <a href="#"
                             className="text-teal-300 font-bold">Recovery</a></p>

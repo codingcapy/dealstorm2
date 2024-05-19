@@ -22,7 +22,7 @@ export default function AddressPage() {
         const res = await axios.post(`${DOMAIN}/api/addresses/`, newAddress);
         if (res?.data.success) {
             setMessage(res?.data.message);
-            navigate("/allset");
+            navigate("/dealstorm2/allset");
         }
         else {
             setMessage(res?.data.message);

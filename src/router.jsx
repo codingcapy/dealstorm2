@@ -14,14 +14,14 @@ export function Router() {
     const router = createBrowserRouter(
         createRoutesFromElements(
             <Route element={<Layout />}>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/signup" element={<SignupPage />} />
-                <Route path="/budget" element={<BudgetPage />} />
-                <Route path="/dashboard" element={<DashboardPage />} />
-                <Route path="/loading" element={<LoadingPage />} />
-                <Route path="/address" element={<AddressPage />} />
-                <Route path="/allset" element={<AllSetPage />} />
+                <Route path="/dealstorm2/" element={<HomePage />} />
+                <Route path="/dealstorm2/login" element={<LoginPage />} />
+                <Route path="/dealstorm2/signup" element={<SignupPage />} />
+                <Route path="/dealstorm2/budget" element={<BudgetPage />} />
+                <Route path="/dealstorm2/dashboard" element={<DashboardPage />} />
+                <Route path="/dealstorm2/loading" element={<LoadingPage />} />
+                <Route path="/dealstorm2/address" element={<AddressPage />} />
+                <Route path="/dealstorm2/allset" element={<AllSetPage />} />
             </Route>
         )
     )
