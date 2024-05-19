@@ -9,6 +9,7 @@ import DashboardPage from "./pages/DashboardPage"
 import LoadingPage from "./pages/LoadingPage"
 import AddressPage from "./pages/AddressPage"
 import AllSetPage from "./pages/AllSetPage"
+import SearchPage from "./pages/SearchPage"
 
 export function Router() {
     const router = createBrowserRouter(
@@ -22,6 +23,7 @@ export function Router() {
                 <Route path="/dealstorm2/loading" element={<LoadingPage />} />
                 <Route path="/dealstorm2/address" element={<AddressPage />} />
                 <Route path="/dealstorm2/allset" element={<AllSetPage />} />
+                <Route path="/dealstorm2/search" element={<SearchPage />} />
             </Route>
         )
     )
