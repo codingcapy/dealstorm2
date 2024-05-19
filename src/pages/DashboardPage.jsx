@@ -9,7 +9,7 @@ import iga from "/IGA.svg";
 import tnt from "/TNT.svg";
 import superstore from "/Superstore.svg"
 import walmart from "/Walmart.svg"
-import freshii from "/Freshii.sv"
+import freshii from "/Freshii.svg"
 import chipotle from "/Chipotle.svg"
 import subway from "/Subway.svg"
 
