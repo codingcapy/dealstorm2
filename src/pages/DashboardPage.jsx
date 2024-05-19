@@ -12,6 +12,7 @@ import walmart from "/Walmart.svg"
 import freshii from "/Freshii.svg"
 import chipotle from "/Chipotle.svg"
 import subway from "/Subway.svg"
+import { NavLink } from "react-router-dom"
 
 export default function DashboardPage() {
 
@@ -38,9 +39,9 @@ export default function DashboardPage() {
             <div className="font-bold text-gray-500 text-center">
                 0/<span className="text-teal-600">${budget}</span>
             </div>
-            <button className="flex flex-col bg-white mx-auto py-1 my-7 px-4 rounded-xl outline-none w-[90%] text-xl text-center text-gray-600">
+            <NavLink to="/dealstorm2/search" className="flex flex-col bg-white mx-auto py-1 my-7 px-4 rounded-xl outline-none w-[90%] text-xl text-center text-gray-600">
                 Search for an ingredient!
-            </button>
+            </NavLink>
             <div className="flex gap-8 flex-col sm:flex-row px-1">
                 <div>
                     <h3 className="text-3xl font-bold tracking-tighter">

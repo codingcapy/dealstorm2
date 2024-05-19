@@ -35,15 +35,9 @@ export default function LoadingPage() {
             <h1 className="text-center text-4xl md:text-8xl tracking-tighter font-bold pt-36">
                 Dealstorm
             </h1>
-            <h2 className="text-center text-2xl tracking-tighter">
+            <h2 className="text-center text-2xl tracking-tighter py-5">
                 Finding inexpensive options with ease
             </h2>
-            <div className="preloader">
-                <div class="b-ico-preloader">
-                </div>
-                <div class="spinner">
-                </div>
-            </div>
             <h1 className="text-center text-4xl">Loading...</h1>
         </main>
     )
