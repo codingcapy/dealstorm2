@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
 import DOMAIN from "../services/endpoint";
 import useAuthStore from "../store/AuthStore";
@@ -20,6 +20,7 @@ export default function SearchPage() {
   const [foods, setFoods] = useState([]);
   const [tags, setTags] = useState([]);
   const { loginService, authLoading, user } = useAuthStore((state) => state);
+  const navigate = useNavigate();
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -30,6 +31,10 @@ export default function SearchPage() {
   const handleFoodSelect = (food) => {
     setTags((prevTags) => [...prevTags, food]);
     setFoods((prevFoods) => prevFoods.filter((item) => item.id !== food.id));
+  };
+
+  const handleNavigateToMyList = () => {
+    navigate('/dealstorm2/mylist', { state: { selectedItems: tags } });
   };
 
 
@@ -59,7 +64,7 @@ export default function SearchPage() {
   }, [search]);
 
   return (
-    <main className="flex-1 bg-emerald-100">
+    <main className="flex-1 bg-emerald-100 flex flex-col ">
       <h2 className="text-2xl font-bold text-center py-2">
         My weekly budget:<span className="text-teal-600">${budget}</span>
       </h2>
@@ -86,6 +91,7 @@ export default function SearchPage() {
         </button>
       </form>
       <div className="flex justify-start md:justify-center items-center md:items-start gap-4 flex-col md:flex-row h-screen md:h-auto">
+
         <div
           id="search"
           className="flex flex-col w-96 h-80 bg-white rounded-md m-0 p-4 gap-2 overflow-y-auto"
@@ -112,9 +118,20 @@ export default function SearchPage() {
             </div>
           ))}
         </div>
+
+        <button
+          className="py-2 px-4 bg-green-900 text-white rounded-md w-32"
+          onClick={handleNavigateToMyList}
+        >
+          Go to My List
+        </button>
+
       </div>
       <NavLink to="/dealstorm2/mylist"
         className="flex flex-col mx-auto w-[300px] text-center px-3 py-3 my-7 rounded-3xl bg-teal-700 text-white text-2xl">View My List</NavLink>
+
+
+
     </main>
   );
 }
