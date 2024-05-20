@@ -42,9 +42,9 @@ export default function DashboardPage() {
             <NavLink to="/dealstorm2/search" className="flex flex-col bg-white mx-auto py-1 my-7 px-4 rounded-xl outline-none w-[90%] text-xl text-center text-gray-600">
                 Search for an ingredient!
             </NavLink>
-            <div className="flex gap-8 flex-col sm:flex-row px-1">
-                <div>
-                    <h3 className="text-3xl font-bold tracking-tighter">
+            <div className="flex gap-8 flex-col sm:flex-row px-1 mx-auto">
+                <div className="mx-auto">
+                    <h3 className="text-3xl font-bold tracking-tighter ">
                         Grocery Stores nearby
                     </h3>
                     <ul className="py-4">
@@ -90,7 +90,7 @@ export default function DashboardPage() {
                         </li>
                     </ul>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col mx-auto">
                     <h3 className="text-3xl font-bold tracking-tighter">
                         Restaurants nearby
                     </h3>

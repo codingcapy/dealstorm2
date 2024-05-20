@@ -52,9 +52,9 @@ export default function MyListPage() {
           <h1 className="text-center text-4xl md:text-8xl tracking-tighter font-bold pt-36">
             My List
           </h1>
-          <div className="w-[350px] bg-white p-4 mt-4 rounded-md">
+          <div className="w-[350px] p-4 mt-4 rounded-md">
             {tags.map((item) => (
-              <div key={item.id}>{item.name}</div>
+              <div key={item.id} className="cursor-pointer rounded-full px-5 py-3 border-2 border-teal-900 text-center">{item.name}</div>
             ))}
           </div>
           <button
